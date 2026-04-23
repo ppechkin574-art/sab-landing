@@ -1,112 +1,299 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARY ARQA BELT, TOO — Оптовая торговля в Казахстане</title>
-    <meta name="description" content="SARY ARQA BELT, TOO — компания из Республики Казахстан, специализирующаяся на оптовой торговле широким ассортиментом товаров. Работаем с 2023 года.">
+    <title>SARY ARQA BELT, TOO — Mobile Development & Wholesale Trade from Kazakhstan</title>
+    <meta name="description" content="SARY ARQA BELT, TOO is a technology company from the Republic of Kazakhstan specializing in mobile application development and wholesale trade.">
     <meta name="author" content="SARY ARQA BELT, TOO">
+    <meta name="theme-color" content="#0A0A0A">
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="SARY ARQA BELT, TOO">
-    <meta property="og:description" content="Оптовая торговля широким ассортиментом товаров. Республика Казахстан.">
-    <meta property="og:url" content="https://sab.com.kz">
+    <meta property="og:description" content="Mobile development and wholesale trade. Republic of Kazakhstan.">
+    <meta property="og:url" content="https://www.sab.com.kz">
     <meta property="og:site_name" content="SARY ARQA BELT, TOO">
-    <meta property="og:locale" content="ru_RU">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="kk_KZ">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-gradient" aria-hidden="true">
+        <div class="bg-blob bg-blob-1"></div>
+        <div class="bg-blob bg-blob-2"></div>
+        <div class="bg-blob bg-blob-3"></div>
+    </div>
+
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#top" class="brand" aria-label="SARY ARQA BELT — на главную">SARY ARQA BELT</a>
-            <nav class="site-nav" aria-label="Основная навигация">
-                <a href="#about">О компании</a>
-                <a href="#contacts">Контакты</a>
+            <a href="#top" class="brand" aria-label="SARY ARQA BELT">
+                <span class="brand-mark">SAB</span>
+                <span class="brand-name">SARY ARQA BELT</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#company" data-i18n="nav.company">Company</a>
+                <a href="#contacts" data-i18n="nav.contacts">Contacts</a>
             </nav>
+
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+                <button type="button" class="lang-btn" data-lang="kz" aria-pressed="false">KZ</button>
+            </div>
         </div>
     </header>
 
     <main id="top">
-        <!-- Hero -->
+        <!-- HERO -->
         <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">SARY ARQA BELT, TOO</h1>
-                <p class="hero-subtitle">Оптовая торговля широким ассортиментом товаров</p>
-                <p class="hero-description">Компания из Республики Казахстан, работающая на рынке с 2023 года</p>
-            </div>
-        </section>
+            <div class="container hero-inner">
+                <div class="hero-badge reveal" data-i18n="hero.badge">Republic of Kazakhstan · Est. 2023</div>
 
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">О компании</h2>
-                <div class="prose">
-                    <p>SARY ARQA BELT, TOO — товарищество с ограниченной ответственностью, зарегистрированное в Республике Казахстан 5 января 2023 года. Основным направлением деятельности компании является оптовая торговля широким ассортиментом товаров без явно выраженной специализации (ОКЭД 46909).</p>
-                    <p>Компания осуществляет коммерческую деятельность на территории Казахстана, выстраивая долгосрочные партнёрские отношения с поставщиками и клиентами. Наш подход основан на надёжности, прозрачности условий сотрудничества и соблюдении всех требований законодательства Республики Казахстан.</p>
-                    <p>Головной офис компании расположен в Павлодарской области. Мы открыты к новым деловым контактам и готовы рассмотреть предложения о сотрудничестве.</p>
+                <h1 class="hero-title reveal">
+                    <span class="hero-title-line" data-i18n="hero.title1">Building mobile products.</span>
+                    <span class="hero-title-line hero-title-accent" data-i18n="hero.title2">Trading at scale.</span>
+                </h1>
+
+                <p class="hero-subtitle reveal" data-i18n="hero.subtitle">SARY ARQA BELT, TOO is a Kazakhstan-based technology company combining mobile application development with wholesale trade operations across Central Asia.</p>
+
+                <div class="hero-actions reveal">
+                    <a href="#services" class="btn btn-primary" data-i18n="hero.cta_primary">Explore our work</a>
+                    <a href="#contacts" class="btn btn-ghost" data-i18n="hero.cta_secondary">Get in touch</a>
                 </div>
 
-                <ul class="facts" role="list">
-                    <li class="fact">
-                        <span class="fact-label">Год основания</span>
-                        <span class="fact-value">2023</span>
-                    </li>
-                    <li class="fact">
-                        <span class="fact-label">Вид деятельности</span>
-                        <span class="fact-value">Оптовая торговля</span>
-                    </li>
-                    <li class="fact">
-                        <span class="fact-label">Регион</span>
-                        <span class="fact-value">Казахстан</span>
-                    </li>
-                    <li class="fact">
-                        <span class="fact-label">БИН</span>
-                        <span class="fact-value">230140003867</span>
-                    </li>
-                </ul>
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <div class="stat-value">2023</div>
+                        <div class="stat-label" data-i18n="hero.stat_founded">Founded</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">2</div>
+                        <div class="stat-label" data-i18n="hero.stat_directions">Core directions</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">KZ</div>
+                        <div class="stat-label" data-i18n="hero.stat_region">Region</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">B2B</div>
+                        <div class="stat-label" data-i18n="hero.stat_model">Business model</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-hidden="true">
+                <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="hero-phone">
+                    <defs>
+                        <linearGradient id="screen-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0A0A0A"/>
+                            <stop offset="100%" stop-color="#2a2a2a"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="40" y="20" width="320" height="460" rx="40" fill="url(#screen-grad)" stroke="#0A0A0A" stroke-width="2"/>
+                    <rect x="55" y="35" width="290" height="430" rx="28" fill="#FAFAFA"/>
+                    <rect x="160" y="48" width="80" height="6" rx="3" fill="#0A0A0A"/>
+                    <rect x="75" y="80" width="100" height="10" rx="2" fill="#0A0A0A"/>
+                    <rect x="75" y="100" width="180" height="6" rx="2" fill="#999"/>
+                    <rect x="75" y="130" width="250" height="80" rx="12" fill="#0A0A0A"/>
+                    <rect x="85" y="145" width="100" height="8" rx="2" fill="#FFF"/>
+                    <rect x="85" y="160" width="170" height="4" rx="1" fill="#888"/>
+                    <rect x="85" y="170" width="150" height="4" rx="1" fill="#888"/>
+                    <rect x="85" y="185" width="60" height="14" rx="7" fill="#FFF"/>
+                    <rect x="75" y="230" width="120" height="90" rx="12" fill="#F0F0F0"/>
+                    <rect x="205" y="230" width="120" height="90" rx="12" fill="#F0F0F0"/>
+                    <circle cx="105" cy="260" r="12" fill="#0A0A0A"/>
+                    <rect x="85" y="290" width="80" height="4" rx="1" fill="#0A0A0A"/>
+                    <rect x="85" y="300" width="60" height="3" rx="1" fill="#999"/>
+                    <circle cx="235" cy="260" r="12" fill="#0A0A0A"/>
+                    <rect x="215" y="290" width="80" height="4" rx="1" fill="#0A0A0A"/>
+                    <rect x="215" y="300" width="60" height="3" rx="1" fill="#999"/>
+                    <rect x="75" y="340" width="250" height="50" rx="10" fill="#0A0A0A"/>
+                    <rect x="90" y="357" width="120" height="6" rx="2" fill="#FFF"/>
+                    <rect x="90" y="370" width="80" height="4" rx="1" fill="#888"/>
+                    <rect x="280" y="355" width="30" height="20" rx="10" fill="#FFF"/>
+                    <rect x="75" y="410" width="250" height="40" rx="10" fill="#F5F5F5"/>
+                </svg>
             </div>
         </section>
 
-        <!-- Contacts -->
+        <!-- SERVICES -->
+        <section id="services" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="services.eyebrow">What we do</span>
+                    <h2 class="section-title" data-i18n="services.title">Two directions, one company</h2>
+                    <p class="section-lead" data-i18n="services.lead">We operate at the intersection of technology and trade, leveraging each to strengthen the other.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="12" y="4" width="24" height="40" rx="4"/>
+                                <line x1="12" y1="12" x2="36" y2="12"/>
+                                <line x1="12" y1="36" x2="36" y2="36"/>
+                                <circle cx="24" cy="40" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title" data-i18n="services.mobile_title">Mobile Application Development</h3>
+                        <p class="service-desc" data-i18n="services.mobile_desc">We design and build native mobile applications for iOS and Android, from concept and UX to App Store and Google Play publication. Our focus is on business tools, commerce platforms, and consumer products tailored for the Central Asian market.</p>
+                        <ul class="service-list">
+                            <li data-i18n="services.mobile_item1">iOS applications (Swift, SwiftUI)</li>
+                            <li data-i18n="services.mobile_item2">Android applications (Kotlin, Jetpack Compose)</li>
+                            <li data-i18n="services.mobile_item3">Cross-platform solutions (React Native, Flutter)</li>
+                            <li data-i18n="services.mobile_item4">App Store &amp; Google Play publication</li>
+                            <li data-i18n="services.mobile_item5">Product design and technical support</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 14 L24 6 L42 14 L42 34 L24 42 L6 34 Z"/>
+                                <path d="M6 14 L24 22 L42 14"/>
+                                <line x1="24" y1="22" x2="24" y2="42"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title" data-i18n="services.trade_title">Wholesale Trade</h3>
+                        <p class="service-desc" data-i18n="services.trade_desc">Wholesale trade across a broad product mix (OKED 46909) throughout the Republic of Kazakhstan. We build long-term partnerships with suppliers and clients through transparent terms and reliable delivery.</p>
+                        <ul class="service-list">
+                            <li data-i18n="services.trade_item1">Diversified product portfolio</li>
+                            <li data-i18n="services.trade_item2">B2B partnerships and supply contracts</li>
+                            <li data-i18n="services.trade_item3">Logistics within Kazakhstan</li>
+                            <li data-i18n="services.trade_item4">Transparent pricing and documentation</li>
+                            <li data-i18n="services.trade_item5">Full compliance with KZ regulations</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+                        <h2 class="section-title" data-i18n="about.title">A new-generation company from Kazakhstan</h2>
+
+                        <p data-i18n="about.p1">SARY ARQA BELT, TOO was incorporated on 5 January 2023 in the Republic of Kazakhstan. Our registered office is located in the Pavlodar Region, and our operations span the entire country.</p>
+
+                        <p data-i18n="about.p2">We combine two complementary directions: software engineering — in particular mobile application development — and wholesale trade. This duality allows us to both build digital tools and put them to use inside real operating businesses.</p>
+
+                        <p data-i18n="about.p3">Our approach is built on reliability, transparent terms of cooperation, and strict adherence to the laws of the Republic of Kazakhstan. We are open to new partnerships, development projects, and supplier relationships.</p>
+                    </div>
+
+                    <div class="about-visual reveal">
+                        <div class="about-card">
+                            <div class="about-card-title" data-i18n="about.mission_title">Our mission</div>
+                            <div class="about-card-body" data-i18n="about.mission_body">To bring modern technology into everyday business across Central Asia — through software and trade alike.</div>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-title" data-i18n="about.values_title">Our values</div>
+                            <div class="about-card-body" data-i18n="about.values_body">Integrity, long-term thinking, engineering quality, and respect for legal and cultural context.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPANY / LEGAL INFO -->
+        <section id="company" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="company.eyebrow">Company details</span>
+                    <h2 class="section-title" data-i18n="company.title">Verified legal information</h2>
+                    <p class="section-lead" data-i18n="company.lead">All details below correspond to the official business registration in the Republic of Kazakhstan.</p>
+                </div>
+
+                <div class="facts">
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_name_label">Legal entity name</span>
+                        <span class="fact-value">SARY ARQA BELT, TOO</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_bin_label">Business Identification Number (BIN)</span>
+                        <span class="fact-value">230140003867</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_date_label">Date of incorporation</span>
+                        <span class="fact-value">05.01.2023</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_form_label">Legal form</span>
+                        <span class="fact-value" data-i18n="company.fact_form_value">Limited Liability Partnership (TOO)</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_country_label">Country of registration</span>
+                        <span class="fact-value" data-i18n="company.fact_country_value">Republic of Kazakhstan</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_oked_label">Main activity code (OKED)</span>
+                        <span class="fact-value" data-i18n="company.fact_oked_value">46909 — Non-specialized wholesale trade</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_secondary_label">Additional activities</span>
+                        <span class="fact-value" data-i18n="company.fact_secondary_value">62010 — Computer programming and mobile application development</span>
+                    </div>
+                    <div class="fact reveal">
+                        <span class="fact-label" data-i18n="company.fact_director_label">Director / authorized representative</span>
+                        <span class="fact-value">Smagulova Zulfiya Talgatovna</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTS -->
         <section id="contacts" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">Контакты</h2>
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="contacts.eyebrow">Get in touch</span>
+                    <h2 class="section-title" data-i18n="contacts.title">Contact information</h2>
+                    <p class="section-lead" data-i18n="contacts.lead">For partnership inquiries, development projects, or supplier relationships — reach us directly.</p>
+                </div>
+
                 <div class="contacts-grid">
-                    <div class="contacts-col">
-                        <dl class="contact-list">
-                            <dt>Юридический адрес</dt>
-                            <dd>140308, Республика Казахстан,<br>Павлодарская область, Баянаульский район,<br>п. Майкаин, ул. Маншук Маметовой, д. 31</dd>
-
-                            <dt>Телефон</dt>
-                            <dd><a href="tel:+77761888811" aria-label="Позвонить по номеру +7 776 188 88 11">+7 (776) 188-88-11</a></dd>
-
-                            <dt>Email</dt>
-                            <dd><a href="mailto:info@sab.com.kz" aria-label="Написать на info@sab.com.kz">info@sab.com.kz</a></dd>
-                        </dl>
+                    <div class="contact-block reveal">
+                        <h3 class="contact-block-title" data-i18n="contacts.address_title">Registered office</h3>
+                        <p class="contact-block-body" data-i18n="contacts.address_value">140308, Republic of Kazakhstan,<br>Pavlodar Region, Bayanaul District,<br>Maikain village, 31 Manshuk Mametova Street</p>
                     </div>
-                    <div class="contacts-col">
-                        <dl class="contact-list">
-                            <dt>БИН</dt>
-                            <dd>230140003867</dd>
 
-                            <dt>Руководитель</dt>
-                            <dd>Смагулова Зульфия Талгатовна</dd>
-
-                            <dt>Дата регистрации</dt>
-                            <dd>05.01.2023</dd>
-                        </dl>
+                    <div class="contact-block reveal">
+                        <h3 class="contact-block-title" data-i18n="contacts.phone_title">Phone</h3>
+                        <p class="contact-block-body">
+                            <a href="tel:+77761888811" aria-label="Call +7 776 188 88 11">+7 (776) 188-88-11</a>
+                        </p>
                     </div>
+
+                    <div class="contact-block reveal">
+                        <h3 class="contact-block-title" data-i18n="contacts.email_title">Email</h3>
+                        <p class="contact-block-body">
+                            <a href="mailto:info@sab.com.kz" aria-label="Write to info@sab.com.kz">info@sab.com.kz</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-block reveal">
+                        <h3 class="contact-block-title" data-i18n="contacts.web_title">Website</h3>
+                        <p class="contact-block-body">
+                            <a href="https://www.sab.com.kz">www.sab.com.kz</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contacts-note reveal">
+                    <p data-i18n="contacts.note">For any questions regarding our mobile applications published on the App Store or Google Play, please use the support email <a href="mailto:info@sab.com.kz">info@sab.com.kz</a>.</p>
                 </div>
             </div>
         </section>
@@ -114,23 +301,38 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p class="footer-copy">&copy; 2026 SARY ARQA BELT, TOO. Все права защищены.</p>
-            <p class="footer-meta">БИН: 230140003867</p>
-            <p class="footer-links"><a href="privacy.html">Политика конфиденциальности</a></p>
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <span class="brand-mark">SAB</span>
+                    <span>SARY ARQA BELT, TOO</span>
+                </div>
+                <p class="footer-tagline" data-i18n="footer.tagline">Mobile development &amp; wholesale trade from Kazakhstan.</p>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-title" data-i18n="footer.legal_title">Legal</div>
+                <p class="footer-line"><span data-i18n="footer.bin_label">BIN</span>: 230140003867</p>
+                <p class="footer-line"><span data-i18n="footer.registered_label">Registered</span>: 05.01.2023</p>
+                <p class="footer-line">
+                    <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                </p>
+                <p class="footer-line">
+                    <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-title" data-i18n="footer.contact_title">Contact</div>
+                <p class="footer-line"><a href="mailto:info@sab.com.kz">info@sab.com.kz</a></p>
+                <p class="footer-line"><a href="tel:+77761888811">+7 (776) 188-88-11</a></p>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 SARY ARQA BELT, TOO. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Плавная прокрутка к якорям
-        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-            anchor.addEventListener('click', function (e) {
-                var target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
