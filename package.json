@@ -1,0 +1,15 @@
+{
+  "name": "sab-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Corporate landing page for SARY ARQA BELT, TOO (https://sab.com.kz)",
+  "scripts": {
+    "start": "serve -s . -l 8080"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
